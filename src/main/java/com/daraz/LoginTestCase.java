@@ -7,14 +7,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 public class LoginTestCase {
+       @Test
+        public void clicklogin () {
+            System.setProperty("webdriver.chrome.driver", "F:\\SeleniumTesting\\chromedriver_win32\\chromedriver.exe");
+            WebDriver driver = new ChromeDriver();
+            driver.manage().window().maximize();
+            driver.get("https://www.wasi.lk/");
 
-    @Test
-    public void clicklogin(){
-        System.setProperty("webdriver.chrome.driver", "F:\\SeleniumTesting\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.get("https://www.daraz.lk/");
+            Login login = new Login(driver);
+            login.clickLoginlink();
+            login.typeusername();
+            login.typepassword();
+            login.clickloginbutton();
+            login.visitStore();
 
-       //driver.findElement(By.id("//input[@id='q']")).sendKeys("Gold Label"+ Keys.ENTER);
+        }
     }
-}
