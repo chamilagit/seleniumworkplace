@@ -21,9 +21,5 @@ public class LoginTestCase {
             login.clickloginbutton();
             login.visitStore();
 
-
-
-
-
         }
     }
