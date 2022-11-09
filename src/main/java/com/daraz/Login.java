@@ -11,7 +11,6 @@ public class Login {
         String PASSWORD = "//*[@id=\"password\"]";
 
         String LOGINGBUTTON ="//*[@id=\"post-8295\"]/div/div/div[2]/div/div/div/div/div[1]/form/p[3]/button";
-
         String HOMEBUTTON ="//*[@id=\"site-header\"]/div[1]/div/div/div/div[1]/div[1]/div/a/img";
 
 
